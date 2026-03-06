@@ -124,4 +124,640 @@
             border: 2px solid white;
         }
 
-        /* Containe
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 4rem 2rem;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #f4a261;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-card {
+            background: rgba(244, 162, 97, 0.1);
+            border-left: 4px solid #f4a261;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            background: rgba(244, 162, 97, 0.2);
+            box-shadow: 0 10px 30px rgba(244, 162, 97, 0.1);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h3 {
+            color: #f4a261;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        /* Positions Section */
+        .positions {
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+        }
+
+        .positions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 2rem;
+        }
+
+        .position-card {
+            background: linear-gradient(135deg, rgba(244, 162, 97, 0.15) 0%, rgba(231, 111, 81, 0.1) 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .position-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 40px rgba(244, 162, 97, 0.2);
+        }
+
+        .position-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .position-content {
+            padding: 2rem;
+        }
+
+        .position-title {
+            font-size: 1.4rem;
+            color: #f4a261;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .position-count {
+            background: rgba(231, 111, 81, 0.3);
+            color: #f4a261;
+            display: inline-block;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .position-card p {
+            color: #e0e0e0;
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .position-specs {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #f4a261;
+        }
+
+        /* Requirements Section */
+        .requirements {
+            background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+        }
+
+        .requirements-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .requirements-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .requirement-item {
+            background: rgba(244, 162, 97, 0.1);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #e76f51;
+        }
+
+        .requirement-item h3 {
+            color: #f4a261;
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .requirement-item ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .requirement-item li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #e0e0e0;
+        }
+
+        .requirement-item li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #f4a261;
+            font-weight: bold;
+        }
+
+        /* CTA Section */
+        .cta {
+            background: linear-gradient(135deg, #f4a261 0%, #e76f51 100%);
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .cta h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #e76f51;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #e76f51;
+        }
+
+        /* Salary Info */
+        .salary-box {
+            background: rgba(244, 162, 97, 0.2);
+            border: 2px solid #f4a261;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            margin: 2rem 0;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        .salary-box h3 {
+            color: #f4a261;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .salary-amount {
+            font-size: 2.5rem;
+            color: #f4a261;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            padding: 2rem;
+            text-align: center;
+            color: #999;
+            border-top: 2px solid #f4a261;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            section h2 {
+                font-size: 1.8rem;
+            }
+
+            .requirements-content {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        /* Scroll Animation */
+        .fade-in {
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .region-badge {
+            display: inline-block;
+            background: #e76f51;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        .total-positions {
+            background: rgba(244, 162, 97, 0.15);
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            text-align: center;
+            border: 2px dashed #f4a261;
+        }
+
+        .total-positions h3 {
+            color: #f4a261;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .total-positions .number {
+            font-size: 3rem;
+            color: #f4a261;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="logo">🏭 Mining Careers Russia</div>
+            <ul>
+                <li><a onclick="scrollToSection('positions')">Positions</a></li>
+                <li><a onclick="scrollToSection('benefits')">Benefits</a></li>
+                <li><a onclick="scrollToSection('requirements')">Requirements</a></li>
+                <li><a onclick="scrollToSection('apply')">Apply Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1617957718645-7680362d2c49?w=1600') center/cover; background-attachment: fixed;">
+        <div class="hero-content">
+            <h1>🚀 Mining Opportunities in Eastern Siberia</h1>
+            <p>Join a Leading Mining Operation with Competitive Benefits & Career Growth</p>
+            <div class="company-badge">Premium Mining Opportunities</div>
+            <div class="region-badge">📍 Eastern Siberia | Rotational Method</div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits" style="background: linear-gradient(rgba(15,52,96,0.95), rgba(22,33,62,0.95)), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600') center/cover; background-attachment: fixed;">
+        <div class="container">
+            <h2>💰 Why Join Us?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">💵</div>
+                    <h3>Excellent Salary</h3>
+                    <p>2,30,000 Rubles per month (approximately 2,800 USD)</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">🏠</div>
+                    <h3>Free Accommodation</h3>
+                    <p>Fully provided by the company for all employees</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">⚕️</div>
+                    <h3>Medical Insurance</h3>
+                    <p>Comprehensive health coverage included</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">🍳</div>
+                    <h3>Kitchen Facilities</h3>
+                    <p>Equipped kitchen for self-cooking meals</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">⏰</div>
+                    <h3>Work Schedule</h3>
+                    <p>10 hours/day, 6 days per week (Rotational)</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Career Growth</h3>
+                    <p>Opportunities for advancement in mining sector</p>
+                </div>
+            </div>
+
+            <div class="salary-box">
+                <h3>Monthly Salary Package</h3>
+                <div class="salary-amount">230,000 ₽</div>
+                <p style="margin-top: 1rem; color: #e0e0e0;">2,30,000 Rubles | Approximately 2,800 USD | All-Inclusive Package</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Positions Section -->
+    <section class="positions" id="positions">
+        <div class="container">
+            <h2>⚙️ Available Positions</h2>
+            
+            <div class="total-positions">
+                <h3>Total Openings</h3>
+                <div class="number">80</div>
+                <p>Professional mining equipment operators needed immediately</p>
+            </div>
+
+            <!-- Mining Site Overview -->
+            <div style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.4); margin: 3rem 0;">
+                <img src="https://images.unsplash.com/photo-1617957718645-7680362d2c49?w=1600" alt="Mining Site in Russia" style="width: 100%; height: 400px; object-fit: cover; display: block;">
+                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.9)); padding: 2rem; color: white;">
+                    <h3 style="margin: 0 0 1rem 0; font-size: 1.8rem; color: #f4a261;">⛏️ Eastern Siberia Mining Operations</h3>
+                    <p style="margin: 0; font-size: 1.1rem; opacity: 0.95;">Modern mining facilities with state-of-the-art equipment and international workforce. Join our team operating premium heavy machinery in Russia's thriving mining sector.</p>
+                </div>
+            </div>
+
+            <div class="positions-grid">
+                <!-- BELAZ Dump Truck -->
+                <div class="position-card fade-in">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/082210335e8b72394e979d031b4892d69456580b.jpg" alt="BELAZ Dump Truck" class="position-image">
+                    <div class="position-content">
+                        <div class="position-title">🚛 BELAZ Dump Truck Driver</div>
+                        <span class="position-count">20 Positions</span>
+                        <p>Operate heavy-duty mining dump trucks for ore transportation</p>
+                        <div class="position-specs">
+                            <strong>Equipment:</strong> BELAZ 40–45 tons<br>
+                            <strong>Load Capacity:</strong> 40-45 metric tons<br>
+                            <strong>Experience Required:</strong> Proven heavy truck driving experience
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Komatsu Excavator -->
+                <div class="position-card fade-in">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/3c8f4e5a8b9c7d2f1e6a4b8c9d7e5f3a2b1c4d6e.jpg" alt="Komatsu PC400 Excavator" class="position-image">
+                    <div class="position-content">
+                        <div class="position-title">🏗️ Excavator Operator</div>
+                        <span class="position-count">20 Positions</span>
+                        <p>Expert excavation operations for ore extraction and site preparation</p>
+                        <div class="position-specs">
+                            <strong>Equipment:</strong> Komatsu PC400<br>
+                            <strong>Bucket Capacity:</strong> 2.4 cubic meters<br>
+                            <strong>Experience Required:</strong> Heavy equipment operation
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LiuGong Bulldozer -->
+                <div class="position-card fade-in">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/888714dc58693218ab45d52272a32d54935388f9.jpg" alt="LiuGong Bulldozer" class="position-image">
+                    <div class="position-content">
+                        <div class="position-title">🚜 Bulldozer Operator</div>
+                        <span class="position-count">20 Positions</span>
+                        <p>Site preparation, earthmoving, and terrain leveling operations</p>
+                        <div class="position-specs">
+                            <strong>Equipment:</strong> LiuGong Bulldozer<br>
+                            <strong>Power:</strong> High-performance heavy-duty blade<br>
+                            <strong>Experience Required:</strong> Earthmoving experience
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Komatsu Front Loader -->
+                <div class="position-card fade-in">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/3d6ef3d8b8c54acc60e1a439150d981f65a38022.jpg" alt="Komatsu Front Loader" class="position-image">
+                    <div class="position-content">
+                        <div class="position-title">⚒️ Front Loader Driver</div>
+                        <span class="position-count">20 Positions</span>
+                        <p>Material handling and loading operations at the mining site</p>
+                        <div class="position-specs">
+                            <strong>Equipment:</strong> Komatsu WA400<br>
+                            <strong>Bucket Capacity:</strong> 3.0 cubic meters<br>
+                            <strong>Experience Required:</strong> Loader operation experience
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="requirements" id="requirements">
+        <div class="container">
+            <h2>✅ Candidate Requirements & Qualifications</h2>
+            
+            <div class="requirements-content">
+                <div>
+                    <div class="requirement-item">
+                        <h3>📋 Experience Requirements</h3>
+                        <ul>
+                            <li>Practical work experience on heavy mining or earth-moving equipment</li>
+                            <li>Experience with similar equipment is acceptable</li>
+                            <li>Proven track record in mining or construction sector</li>
+                            <li>Valid operator certifications (if available)</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-item" style="margin-top: 1.5rem;">
+                        <h3>📸 Qualification Proof</h3>
+                        <ul>
+                            <li>Submit detailed resume with work history</li>
+                            <li>Provide photos/videos demonstrating your experience</li>
+                            <li>Include qualification documents and certificates</li>
+                            <li>Submit length of service records if available</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="requirement-item">
+                        <h3>🌍 Eligibility</h3>
+                        <ul>
+                            <li>Citizens of India, Bangladesh, or Nepal</li>
+                            <li>Ready for immediate commencement</li>
+                            <li>Commitment to rotational/shift method work</li>
+                            <li>Valid passport and work authorization</li>
+                        </ul>
+                    </div>
+                    <div class="requirement-item" style="margin-top: 1.5rem;">
+                        <h3>🤝 Selection Process</h3>
+                        <ul>
+                            <li>In-person selection available in your country</li>
+                            <li>Participation of company representatives from Russia</li>
+                            <li>Final approval by the employer</li>
+                            <li>Professional onboarding and training support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: rgba(244, 162, 97, 0.1); padding: 2rem; border-radius: 8px; margin-top: 2rem; border-left: 4px solid #e76f51;">
+                <h3 style="color: #f4a261; margin-bottom: 1rem;">🌏 International Workforce</h3>
+                <p style="color: #e0e0e0;">We welcome experienced operators from <strong style="color: #f4a261;">India, Bangladesh, and Nepal</strong> to join our mining operations in Eastern Siberia. All candidates will receive comprehensive support throughout the recruitment and onboarding process.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="apply">
+        <div class="container">
+            <h2>🚀 Ready to Join Our Team?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 1.5rem; color: rgba(255, 255, 255, 0.9);">
+                Don't miss this opportunity to work in Russia's thriving mining sector with excellent salary and benefits!
+            </p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary">📧 Apply Now</button>
+                <button class="btn btn-secondary">📞 Contact Us</button>
+            </div>
+            <p style="margin-top: 2rem; color: rgba(255, 255, 255, 0.8);">
+                Location: <strong>Eastern Siberia, Russia</strong> | Total Positions: <strong>80</strong> | Countries: <strong>India, Bangladesh, Nepal</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Mining Opportunities in Russia</strong> - Professional Recruitment Platform</p>
+        <p>Connecting Talented Professionals from India, Bangladesh & Nepal with Opportunities in Russia</p>
+        <p>Eastern Siberia Mining Operations | Quality, Reliability, Growth</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">© 2026 Mining Careers Russia. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll functionality
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.animation = 'fadeInUp 0.8s ease forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.opacity = '0';
+            observer.observe(el);
+        });
+
+        // Button interactions
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                alert('Thank you for your interest!\n\nPlease contact your recruitment agency for more details.\n\n📧 Email your resume with experience proof (photos/videos)\n📱 Include contact details\n\nWe look forward to reviewing your application!');
+            });
+        });
+
+        // Scroll reveal animation
+        window.addEventListener('scroll', function() {
+            document.querySelectorAll('.fade-in').forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    el.style.animation = 'fadeInUp 0.8s ease forwards';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
